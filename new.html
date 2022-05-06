@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<style type="text/css">
+		.input
+		{
+			width: 200px;
+			height: 40px;
+			border: 1px solid black;
+			border-radius: 5px;
+			background-color: blue;
+			color: white;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+		.input1
+		{
+			width: 200px;
+			height: 40px;
+			border: 1px solid black;
+			border-radius: 5px;
+			background-color: cyan;
+		}
+		::placeholder
+		{
+			color: black;
+			text-align: center;
+			font-size: 20px;
+
+		}
+		input
+		{
+			font-size: 20px;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		num=parseInt(prompt ("Enter number"));
+        var num,i,fact;
+        i=num-1;
+        fact=num;
+        while(i>=1)
+        {
+ 	    fact=fact*i;
+ 	    i=i-1;
+        }
+        document.write(+fact)
+		function sum()	
+		{
+			num1=document.getElementById("value1").value;
+			num2=document.getElementById("value2").value;
+			num3=parseInt(num1)+parseInt(num2);
+			alert("sum= "+num3);
+			//document.write("your ans ="+num3);		
+		}
+			function sub()	
+		{
+			num1=document.getElementById("value1").value;
+			num2=document.getElementById("value2").value;
+			num3=parseInt(num1)-parseInt(num2);
+			alert("sub= "+num3);
+			//document.write("your ans ="+num3);		
+		}
+			function div()	
+		{
+			num1=document.getElementById("value1").value;
+			num2=document.getElementById("value2").value;
+			num3=parseInt(num1)/parseInt(num2);
+			alert("div= "+num3);
+			//document.write("your ans ="+num3);		
+		}
+			function multi()	
+		{
+			num1=document.getElementById("value1").value;
+			num2=document.getElementById("value2").value;
+			num3=parseInt(num1)*parseInt(num2);
+			alert("multi= "+num3);
+			//document.write("your ans ="+num3);		
+		}
+
+	</script>
+</head>
+<body>
+<h1>JavaScript input calculation</h1>
+ <input class="input1" type="text"  id="value1" placeholder="Enter 1St value">
+ <br>
+ <br>
+ <input class="input1" type="text"  id="value2" placeholder="Enter 2nd value">
+ <br>
+ <br>
+ <input class="input" type="button"  value="sum" onclick="sum()">
+ <br>
+ <br>
+ <input class="input" type="button"  value="sub" onclick="sub()">
+ <br>
+ <br>
+ <input class="input" type="button"  value="div" onclick="div()">
+ <br>
+ <br>
+ <input class="input" type="button"  value="multi" onclick="multi()"> 
+
+ 
+</body>
+</html>
